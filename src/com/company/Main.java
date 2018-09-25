@@ -15,9 +15,9 @@ public class Main {
     {
         return Integer.toOctalString(i);
     }
-    public static String ToDecimal(int i)
+    public static int ToDecimal(char i)
     {
-        return "egg";
+        return (int)i;
     }
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Main {
 
         char[] inputChar = input.toCharArray();
 
-
+        System.out.println(ToDecimal('c'));
 
     }
 }
