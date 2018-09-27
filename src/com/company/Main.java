@@ -22,8 +22,7 @@ public class Main {
         return Integer.toString((int)i);
     }
 
-    public static int GetRandomNumber(int min, int max)
-    {
+    public static int GetRandomNumber(int min, int max) {
         Random rand = new Random();
         return rand.nextInt((max - min) + 1) + min;
     }
@@ -38,8 +37,10 @@ public class Main {
         Map<Integer, String> strDict = new HashMap<Integer, String>();
 
         int a = GetRandomNumber(1, 5); // Position in sequence
-        int b = GetRandomNumber(0, inputChar.length-1); // Position in char array
+        int b = (int)(Math.random()*inputChar.length); // Position in char array
         int c = 0; // Count
+        System.out.println(a);
+        System.out.println(b);
         while (c < inputChar.length)
         {
             if (a == 1)
