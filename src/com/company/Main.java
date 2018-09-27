@@ -43,30 +43,15 @@ public class Main {
         while (c < inputChar.length)
         {
             if (a == 1)
-            {
                 strDict.put(b, ToBinary(inputChar[b]));
-                System.out.println(inputChar[b] + " - " + ToBinary(inputChar[b]) + " - " + b);
-            }
             else if (a == 2)
-            {
                 strDict.put(b, ToOctal(inputChar[b]));
-                System.out.println(inputChar[b] + " - " + ToOctal(inputChar[b]) + " - " + b);
-            }
             else if (a == 3)
-            {
                 strDict.put(b, ToDecimal(inputChar[b]));
-                System.out.println(inputChar[b] + " - " + ToDecimal(inputChar[b]) + " - " + b);
-            }
             else if (a == 4)
-            {
                 strDict.put(b, ToHex(inputChar[b]));
-                System.out.println(inputChar[b] + " - " + ToHex(inputChar[b]) + " - " + b);
-            }
             else if (a == 5)
-            {
                 strDict.put(b, Character.toString(inputChar[b]));
-                System.out.println(Integer.toString(inputChar[b]));
-            }
             c++;
             b = (b == inputChar.length-1) ? 0 : b+1;
             a = (a == 5) ? 1 : a+1;
